@@ -30,7 +30,7 @@ imageContainer.addEventListener('click', function(e) {
       for(let i = 0; i < saleItems.length; i++) {
          if(saleItems[i].itemId == rightImg.id) {
             let imgIndex = saleItems[i].itemImage.indexOf(getImgSrc);
-            saleItems[i].itemImage[imgIndex+1] ? rightImg.src = saleItems[i].itemImage[imgIndex+1] : rightImg.src = saleItems[i].itemImage[imgIndex];
+            saleItems[i].itemImage[imgIndex+1] ? rightImg.src = saleItems[i].itemImage[imgIndex+1] : rightImg.src = saleItems[i].itemImage[0];
          }
       }
    }
@@ -45,7 +45,7 @@ imageContainer.addEventListener('click', function(e) {
       for(let i = 0; i < saleItems.length; i++) {
          if(saleItems[i].itemId == rightImg.id) {
             let imgIndex = saleItems[i].itemImage.indexOf(getImgSrc);
-            saleItems[i].itemImage[imgIndex-1] ? rightImg.src = saleItems[i].itemImage[imgIndex-1] : rightImg.src = saleItems[i].itemImage[0];
+            saleItems[i].itemImage[imgIndex-1] ? rightImg.src = saleItems[i].itemImage[imgIndex-1] : rightImg.src = saleItems[i].itemImage[imgIndex+1];
          }
       }
    }

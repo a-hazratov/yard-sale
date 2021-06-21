@@ -65,6 +65,8 @@ body {
 
 .intro p {
   text-align: justify;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .main {
@@ -104,10 +106,10 @@ body {
   height: 70%;
 }
 
-.post__img:hover {
+/*.post__img:hover {
   border: none;
   box-shadow: 6px 6px 10px #333;
-}
+}*/
 
 .footer {
   position: fixed;
@@ -139,9 +141,18 @@ body {
   z-index: 1;
   font-size: 2rem;
   margin: 3px;
+  padding: 5px;
   opacity: 0.8;
   font-weight: bold;
   cursor: pointer;
+}
+
+.rightArrow:active {
+  box-shadow: 4px 4px 8px #333;
+}
+
+.leftArrow:active {
+  box-shadow: 4px 4px 8px #333;
 }
 
 .leftArrow {
