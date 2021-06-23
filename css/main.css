@@ -125,11 +125,6 @@ body {
   height: 70%;
 }
 
-/*.post__img:hover {
-  border: none;
-  box-shadow: 6px 6px 10px #333;
-}*/
-
 .footer {
   position: fixed;
   left: 0;
@@ -224,6 +219,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-top: 80px;
 }
 
 .modal {
