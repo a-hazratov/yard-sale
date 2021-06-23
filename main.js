@@ -4,20 +4,7 @@ $(document).ready(()=> {
 //const myCollection = document.querySelector("#imageBox");
 
 const imageContainer = document.querySelector("#sale-items");
-/*
-imageContainer.addEventListener('click',function(e) {
-   if(e.target.tagName == "IMG") {
-      console.log("This item is clicked " + e.target.id);
-      //e.target.src = saleItems[0].itemImage[1];
-       for(let i = 0; i < saleItems.length; i++) {
-          if(saleItems[i].itemId == e.target.id) {
-             let imgIndex = saleItems[i].itemImage.indexOf(e.target.getAttribute('src'));
-             saleItems[i].itemImage[imgIndex+1] ? e.target.src = saleItems[i].itemImage[imgIndex+1] : e.target.src = saleItems[i].itemImage[0];
-          }
-       }
-   }
-   
-}) */
+
 
 //const imgRightArrow = document.querySelector('.rightArrow');
 //const imgLeftArrow = document.querySelector('.leftArrow');
@@ -51,6 +38,10 @@ imageContainer.addEventListener('click', function(e) {
    }
 
 })
+
+
+
+
 
 
 
@@ -147,3 +138,81 @@ function showItems (itemsArray) {
 };
 
 showItems(saleItems);
+
+const mainContainer = document.getElementById("sale-items");
+const phoneContact = document.querySelector('.phoneBox');
+
+
+
+
+
+//closeModalCross.addEventListener('click', closeModal);
+
+function showPhone () {
+  let output = `
+  <div class="modal-bg">
+   
+    <div class="modal">
+    <span class="closeModal">&times;</span>
+       <div class="phoneContainer">
+       <h3>Arthur (亚瑟)</h3>
+         <ul>
+           <li>电话 / 微信: 15218209747</li>
+           
+         </ul>
+         <hr class="lineBreak">
+       </div>
+       
+       <div class="phoneContainer">
+       <h3>李果</h3>
+       <ul>
+           <li>电话 / 微信: 13553493070</li>
+  
+         </ul>
+         <hr class="lineBreak">
+       </div>
+       
+       <div class="phoneContainer">
+       <h3>温宇</h3>
+         <ul>
+           <li>电话 / 微信: 18820811069</li>
+           <hr class="lineBreak">
+       </div>
+       
+       <div class="modalBottom"></div>
+    </div>
+    
+  </div>
+  `
+
+   mainContainer.insertAdjacentHTML('beforeend', output); 
+  
+}
+
+let clicked = false;
+    
+phoneContact.addEventListener('click', function(e) {
+  
+    if(clicked == false && e.target.getAttribute('class') == 'fas fa-mobile-alt') {
+      showPhone()  
+      clicked = true; 
+    } else if ( clicked == true && e.target.getAttribute('class') == 'fas fa-mobile-alt' ) {
+       let modalWindow = document.querySelector('.modal-bg');
+       mainContainer.removeChild(modalWindow);
+       clicked = false;
+    }
+    const closeModalCross = document.querySelector('.closeModal');
+    if(clicked == true) {
+        let modalWindow = document.querySelector('.modal-bg');
+        closeModalCross.addEventListener('click', function() {
+         mainContainer.removeChild(modalWindow);
+         clicked = false;
+      })
+     
+    } 
+   
+});
+
+
+
+
