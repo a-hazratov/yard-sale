@@ -56,6 +56,27 @@ body {
   margin-left: 20px;
 }
 
+.navbar__bottom {
+  width: 100vw;
+  height: 5px;
+  background-color: #f7d200;
+  margin-top: 1px;
+}
+
+#yard-sale-img img {
+  width: 115px;
+  height: 145px;
+}
+
+#yard-sale-img {
+  width: 115px;
+  height: 145px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
 .phoneBox {
   height: 100%;
   position: absolute;
@@ -80,7 +101,7 @@ body {
 }
 .intro {
   flex-wrap: wrap;
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -88,6 +109,7 @@ body {
   text-align: justify;
   padding-left: 7px;
   padding-right: 7px;
+  margin-top: 20px;
 }
 
 .main {
@@ -298,7 +320,8 @@ body {
 
 .lineBreak {
   display: block;
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;

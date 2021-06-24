@@ -50,8 +50,6 @@ imageContainer.addEventListener('click', function(e) {
 const saleItems = [
     {
        itemId: 4011,
-       itemIdRight: 40111,
-       itemIdLeft: 40112,
        itemImage: ["img/air-pur-1.jpg", "img/air-pur-2.jpg", "img/air-pur-3.jpg"],
        itemName: "Name-1",
        itemPrice: 25,
@@ -60,8 +58,6 @@ const saleItems = [
 
     {
         itemId: 4012,
-        itemIdRight: 40121,
-        itemIdLeft: 40122,
         itemImage: ["img/aircon-big-1.jpg", "img/aircon-big-2.jpg", "img/aircon-big-3.jpg", "img/aircon-big-4.jpg"],
         itemName: "Name-2",
         itemPrice: 25,
@@ -70,8 +66,6 @@ const saleItems = [
 
      {
         itemId: 4013,
-        itemIdRight: 40131,
-        itemIdLeft: 40132,
         itemImage: ["img/big-cabinet-1.jpg", "img/big-cabinet-2.jpg"],
         itemName: "Name-3",
         itemPrice: 25,
@@ -80,8 +74,6 @@ const saleItems = [
 
      {
         itemId: 4014,
-        itemIdRight: 40141,
-        itemIdLeft: 40142,
         itemImage: ["img/blender-midea-1.jpg", "img/blender-midea-2.jpg"],
         itemName: "Name-4",
         itemPrice: 25,
@@ -90,8 +82,6 @@ const saleItems = [
 
      {
         itemId: 4015,
-        itemIdRight: 40151,
-        itemIdLeft: 40152,
         itemImage: ["img/blender-phil-1.jpg", "img/blender-phil-2.jpg"],
         itemName: "Name-5",
         itemPrice: 25,
@@ -100,13 +90,158 @@ const saleItems = [
 
      {
         itemId: 4016,
-        itemIdRight: 40161,
-        itemIdLeft: 40162,
         itemImage: ["img/blow-heater-1.jpg", "img/blow-heater-2.jpg"],
         itemName: "Name-6",
         itemPrice: 25,
         itemDesc: "Some description here in Chinese"
      },
+     {
+      itemId: 4017,
+      itemImage: ["img/blue-mat-1.jpg", "img/blue-mat-2.jpg", "img/blue-mat-3.jpg"],
+      itemName: "Name-7",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4018,
+      itemImage: ["img/book-cabinet-1.jpg", "img/book-cabinet-2.jpg", "img/book-cabinet-3.jpg"],
+      itemName: "Name-8",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4019,
+      itemImage: ["img/e-blanket-1.jpg", "img/e-blanket-2.jpg"],
+      itemName: "Name-9",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4020,
+      itemImage: ["img/garden-chair-1.jpg", "img/garden-chair-2.jpg","img/garden-chair-3.jpg"],
+      itemName: "Name-10",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4021,
+      itemImage: ["img/heater-1.jpg", "img/heater-2.jpg", "img/heater-3.jpg"],
+      itemName: "Name-11",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4022,
+      itemImage: ["img/scales-1.jpg", "img/scales-2.jpg"],
+      itemName: "Name-12",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4023,
+      itemImage: ["img/stand-lamp-1.jpg", "img/stand-lamp-2.jpg"],
+      itemName: "Name-13",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4024,
+      itemImage: ["img/scooter-1.jpg", "img/scooter-2.jpg"],
+      itemName: "Name-14",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4025,
+      itemImage: ["img/super-desk-1.jpg", "img/super-desk-2.jpg"],
+      itemName: "Name-15",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4026,
+      itemImage: ["img/weights-1.jpg", "img/weights-2.jpg"],
+      itemName: "Name-16",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4027,
+      itemImage: ["img/round-chair-1.jpg", "img/round-chair-2.jpg"],
+      itemName: "Name-17",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4028,
+      itemImage: ["img/foam-1.jpg", "img/foam-2.jpg", "img/foam-3.jpg", "img/foam-4.jpg"],
+      itemName: "Name-18",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4029,
+      itemImage: ["img/couch-cover-1.jpg"],
+      itemName: "Name-19",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4030,
+      itemImage: ["img/oven-1.jpg"],
+      itemName: "Name-20",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4031,
+      itemImage: ["img/quilt-pink-1.jpg", "img/quilt-pink-2.jpg", "img/quilt-pink-3.jpg" ],
+      itemName: "Name-21",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4032,
+      itemImage: ["img/quilt-pink-1.jpg", "img/quilt-pink-2.jpg", "img/quilt-pink-3.jpg" ],
+      itemName: "Name-22",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4033,
+      itemImage: ["img/room-cooler-1.jpg" ],
+      itemName: "Name-23",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4034,
+      itemImage: ["img/curtains-beige-1.jpg" ],
+      itemName: "Name-24",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4035,
+      itemImage: ["img/curtains-brown-1.jpg" ],
+      itemName: "Name-25",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4036,
+      itemImage: ["img/carpet-red-1.jpg" ],
+      itemName: "Name-26",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   },
+   {
+      itemId: 4037,
+      itemImage: ["img/carpet-beige-1.jpg" ],
+      itemName: "Name-27",
+      itemPrice: 25,
+      itemDesc: "Some description here in Chinese"
+   }
 ];
 
 
@@ -130,8 +265,8 @@ function showItems (itemsArray) {
            Description: ${each.itemDesc}
           </p> 
           </div>
-          <span class="rightArrow" id="${each.itemIdRight}">&#10097;</span>
-          <span class="leftArrow" id="${each.itemIdLeft}">&#10096;</span>
+          <span class="rightArrow">&#10097;</span>
+          <span class="leftArrow">&#10096;</span>
         </div>`
     })
     return itemsCollection.innerHTML = output;
@@ -156,6 +291,7 @@ function showPhone () {
     <span class="closeModal">&times;</span>
        <div class="phoneContainer">
        <h3>Arthur (亚瑟)</h3>
+       <h5>寸金嘉苑详情咨询</h5>
          <ul>
            <li>电话 / 微信: 15218209747</li>
            
@@ -165,6 +301,7 @@ function showPhone () {
        
        <div class="phoneContainer">
        <h3>李果</h3>
+       <h5>更多其他咨询</h5>
        <ul>
            <li>电话 / 微信: 13553493070</li>
   
@@ -174,6 +311,7 @@ function showPhone () {
        
        <div class="phoneContainer">
        <h3>温宇</h3>
+       <h5>更多其他咨询</h5>
          <ul>
            <li>电话 / 微信: 18820811069</li>
            <hr class="lineBreak">
