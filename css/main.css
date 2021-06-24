@@ -36,6 +36,7 @@ body {
   padding-bottom: 60px;
   background-color: #fff;
   position: relative;
+  min-width: 100vw;
 }
 
 .navbar {
@@ -256,9 +257,9 @@ body {
 .modal {
   background-color: whitesmoke;
   width: 40%;
-  height: 43%;
+  height: 40%;
   display: flex;
-  margin-bottom: 35%;
+  margin-bottom: 25%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -283,15 +284,15 @@ body {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .modal {
-    width: 60%;
+    width: 50%;
     height: 35%;
   }
 }
 
 @media screen and (min-width: 310px) and (max-width: 768px) {
   .modal {
-    width: 75%;
-    height: 55%;
+    width: 70%;
+    height: 40%;
   }
 }
 
