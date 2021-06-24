@@ -1,19 +1,18 @@
 
 $(document).ready(()=> {  
   //showItems(saleItems);
-//const myCollection = document.querySelector("#imageBox");
+
 
 const imageContainer = document.querySelector("#sale-items");
 
 
-//const imgRightArrow = document.querySelector('.rightArrow');
-//const imgLeftArrow = document.querySelector('.leftArrow');
+
 
 imageContainer.addEventListener('click', function(e) {
    if(e.target.getAttribute('class') == 'rightArrow') {
       const rightImg = e.target.parentNode.children[1].firstElementChild;
       const getImgSrc = rightImg.getAttribute('src');
-      console.log(rightImg.id);
+     
       for(let i = 0; i < saleItems.length; i++) {
          if(saleItems[i].itemId == rightImg.id) {
             let imgIndex = saleItems[i].itemImage.indexOf(getImgSrc);
@@ -32,7 +31,7 @@ imageContainer.addEventListener('click', function(e) {
       for(let i = 0; i < saleItems.length; i++) {
          if(saleItems[i].itemId == rightImg.id) {
             let imgIndex = saleItems[i].itemImage.indexOf(getImgSrc);
-            saleItems[i].itemImage[imgIndex-1] ? rightImg.src = saleItems[i].itemImage[imgIndex-1] : rightImg.src = saleItems[i].itemImage[imgIndex+1];
+            saleItems[i].itemImage[imgIndex-1] ? rightImg.src = saleItems[i].itemImage[imgIndex-1] : rightImg.src = saleItems[i].itemImage[0];
          }
       }
    }
@@ -258,7 +257,29 @@ function showItems (itemsArray) {
     return itemsCollection.innerHTML = output;
 };
 
+
+
 showItems(saleItems);
+
+function removeArrows () {
+   let containertBox = document.querySelector('#sale-items');
+   let postArray = containertBox.children;
+   
+   for(let i = 0; i < postArray.length; i++) {
+       let imgId = postArray[i].querySelector('.img__div').firstElementChild.id;
+       for(let j = 0; j < saleItems.length; j++) {
+          if(imgId == saleItems[j].itemId && saleItems[j].itemImage.length == 1) {
+             
+             let imgRight = postArray[i].querySelector('.rightArrow');
+             let imgLeft = postArray[i].querySelector('.leftArrow');
+             postArray[i].removeChild(imgRight);
+             postArray[i].removeChild(imgLeft);
+          } 
+       }
+   }
+
+};
+removeArrows();
 
 const mainContainer = document.getElementById("sale-items");
 const phoneContact = document.querySelector('.phoneBox');
@@ -267,7 +288,7 @@ const phoneContact = document.querySelector('.phoneBox');
 
 
 
-//closeModalCross.addEventListener('click', closeModal);
+
 
 function showPhone () {
   let output = `
