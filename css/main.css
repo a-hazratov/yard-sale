@@ -98,7 +98,7 @@ body {
 .post {
   scroll-snap-margin-top: 110px; /*for iOS*/
   scroll-margin-top: 90px;
-  width: 350px;
+  width: 340px;
   height: 430px;
   border: 1px solid black;
   border-radius: 25px;
