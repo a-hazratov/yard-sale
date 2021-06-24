@@ -201,13 +201,6 @@ const saleItems = [
       itemDesc: "Some description here in Chinese"
    },
    {
-      itemId: 4032,
-      itemImage: ["img/quilt-pink-1.jpg", "img/quilt-pink-2.jpg", "img/quilt-pink-3.jpg" ],
-      itemName: "Name-22",
-      itemPrice: 25,
-      itemDesc: "Some description here in Chinese"
-   },
-   {
       itemId: 4033,
       itemImage: ["img/room-cooler-1.jpg" ],
       itemName: "Name-23",
@@ -232,13 +225,6 @@ const saleItems = [
       itemId: 4036,
       itemImage: ["img/carpet-red-1.jpg" ],
       itemName: "Name-26",
-      itemPrice: 25,
-      itemDesc: "Some description here in Chinese"
-   },
-   {
-      itemId: 4037,
-      itemImage: ["img/carpet-beige-1.jpg" ],
-      itemName: "Name-27",
       itemPrice: 25,
       itemDesc: "Some description here in Chinese"
    }
