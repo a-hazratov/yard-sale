@@ -35,6 +35,7 @@ body {
   flex-direction: column;
   padding-bottom: 60px;
   background-color: #fff;
+  position: relative;
 }
 
 .navbar {
@@ -45,7 +46,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   padding: 1rem 0.5rem 0.5rem;
-  z-index: 1;
+  z-index: 100;
 }
 
 .navbar__title {
@@ -91,7 +92,7 @@ body {
 .main {
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .post {
@@ -132,7 +133,9 @@ body {
   width: 100%;
   height: 60px;
   /*align-items: center;*/
-  padding: 1rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -143,10 +146,21 @@ body {
 
 .creator {
   font-size: 1rem;
-  display: block;
-  float: left;
-  margin-right: 20px;
-  height: 100%;
+
+  margin-left: 50px;
+  margin: 0 auto;
+}
+
+.creator p {
+  float: right;
+}
+
+.email {
+  font-size: 1.3rem;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: focus;
 }
 
 .rightArrow {
@@ -185,25 +199,42 @@ body {
   cursor: pointer;
 }
 
-.email {
-  font-size: 1.3rem;
-  margin-left: 10px;
-  color: white;
-  text-decoration: none;
-  cursor: focus;
-}
-
 .copyRight {
-  display: block;
-  float: right;
   padding-top: 5px;
-  margin-right: 20px;
+  margin: 0 auto;
   height: 100%;
 }
 
-.creator p {
-  line-height: 1.1rem;
-  padding-left: 10px;
+@media screen and (min-width: 310px) and (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .copyRight {
+    height: 45%;
+  }
+  .copyRight p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .creator {
+    height: 45%;
+  }
+  .creator p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .navbar__title {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
 }
 
 /*Modals for wechat and phone numbers*/
@@ -224,8 +255,8 @@ body {
 
 .modal {
   background-color: whitesmoke;
-  width: 35%;
-  height: 35%;
+  width: 40%;
+  height: 43%;
   display: flex;
   margin-bottom: 35%;
   justify-content: center;
@@ -250,10 +281,17 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .modal {
+    width: 60%;
+    height: 35%;
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 768px) {
   .modal {
     width: 75%;
-    height: 35%;
+    height: 55%;
   }
 }
 
