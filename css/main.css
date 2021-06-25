@@ -317,7 +317,7 @@ body {
 @media screen and (min-width: 310px) and (max-width: 768px) {
   .modal {
     width: 70%;
-    height: 40%;
+    height: 55%;
   }
 }
 
