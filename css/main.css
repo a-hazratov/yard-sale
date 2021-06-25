@@ -124,15 +124,18 @@ body {
   width: 340px;
   height: 430px;
   border: 1px solid black;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: 4px 4px 10px #333;
+  box-shadow: 4px 4px 17px #333;
   position: relative;
 }
 
 .post__bottom {
   height: 30px;
+}
+.post__bottom p {
+  margin-left: 25px;
 }
 .post__img {
   margin: 1rem auto;
