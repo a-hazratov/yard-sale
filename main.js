@@ -37,13 +37,6 @@ imageContainer.addEventListener('click', function(e) {
    }
 
 })
-
-
-
-
-
-
-
   })
 
 const saleItems = [
@@ -52,7 +45,8 @@ const saleItems = [
        itemImage: ["img/air-pur-1.jpg", "img/air-pur-2.jpg", "img/air-pur-3.jpg"],
        itemName: "空气净化器",
        itemPrice: 70,
-       itemDesc: "二手"
+       itemDesc: "5成新",
+       sold: false
     },
 
     {
@@ -60,7 +54,8 @@ const saleItems = [
         itemImage: ["img/aircon-big-1.jpg", "img/aircon-big-2.jpg", "img/aircon-big-3.jpg", "img/aircon-big-4.jpg"],
         itemName: "空调",
         itemPrice: 3000,
-        itemDesc: "二手，使用了 7 个月"
+        itemDesc: "8成新",
+        sold: false
      },
 
      {
@@ -68,7 +63,8 @@ const saleItems = [
         itemImage: ["img/big-cabinet-1.jpg", "img/big-cabinet-2.jpg"],
         itemName: "储物柜",
         itemPrice: 75,
-        itemDesc: "二手, 木制的"
+        itemDesc: "2成新, 木制的",
+        sold: false
      },
 
      {
@@ -76,7 +72,8 @@ const saleItems = [
         itemImage: ["img/blender-midea-1.jpg", "img/blender-midea-2.jpg"],
         itemName: "搅拌机 (美的)",
         itemPrice: 180,
-        itemDesc: "新的"
+        itemDesc: "全新",
+        sold: false
      },
 
      {
@@ -84,148 +81,187 @@ const saleItems = [
         itemImage: ["img/blender-phil-1.jpg", "img/blender-phil-2.jpg"],
         itemName: "搅拌机 (飞利浦)",
         itemPrice: 120,
-        itemDesc: "新的"
+        itemDesc: "全新",
+        sold: false
      },
+
+     {
+      itemId: 4037,
+      itemImage: ["img/office-chair-1.jpg", "img/office-chair-2.jpg"],
+      itemName: "办公椅",
+      itemPrice: 230,
+      itemDesc: "8成新 - (卖光了)",
+      sold: true
+   },
 
      {
         itemId: 4016,
         itemImage: ["img/blow-heater-1.jpg", "img/blow-heater-2.jpg"],
         itemName: "暖风机",
         itemPrice: 30,
-        itemDesc: "二手"
+        itemDesc: "5成新",
+        sold: false
      },
      {
       itemId: 4017,
       itemImage: ["img/blue-mat-1.jpg", "img/blue-mat-2.jpg", "img/blue-mat-3.jpg"],
       itemName: "可折叠垫",
       itemPrice: 80,
-      itemDesc: "二手"
+      itemDesc: "6成新",
+      sold: false
    },
    {
       itemId: 4018,
       itemImage: ["img/book-cabinet-1.jpg", "img/book-cabinet-2.jpg", "img/book-cabinet-3.jpg"],
       itemName: "书柜",
       itemPrice: 150,
-      itemDesc: "二手"
+      itemDesc: "6成新",
+      sold: false
+   },
+
+   {
+      itemId: 4038,
+      itemImage: ["img/printer-1.jpg", "img/printer-2.jpg"],
+      itemName: "打印机 (爱普生)",
+      itemPrice: 250,
+      itemDesc: "7成新 - (卖光了)",
+      sold: true
    },
    {
       itemId: 4019,
       itemImage: ["img/e-blanket-1.jpg", "img/e-blanket-2.jpg"],
       itemName: "电热毯",
       itemPrice: 75,
-      itemDesc: "二手"
+      itemDesc: "9成新",
+      sold: false
    },
    {
       itemId: 4020,
       itemImage: ["img/garden-chair-1.jpg", "img/garden-chair-2.jpg","img/garden-chair-3.jpg"],
       itemName: "折叠躺椅",
       itemPrice: 100,
-      itemDesc: "二手, 有椅垫"
+      itemDesc: "8成新, 有椅垫",
+      sold: false
    },
    {
       itemId: 4021,
       itemImage: ["img/heater-1.jpg", "img/heater-2.jpg", "img/heater-3.jpg"],
       itemName: "加热器",
       itemPrice: 65,
-      itemDesc: "二手, 很少使用"
+      itemDesc: "8成新, 很少使用",
+      sold: false
    },
    {
       itemId: 4022,
       itemImage: ["img/scales-1.jpg", "img/scales-2.jpg"],
       itemName: "体质称",
       itemPrice: 50,
-      itemDesc: "二手"
+      itemDesc: "6成新",
+      sold: false
    },
    {
       itemId: 4023,
       itemImage: ["img/stand-lamp-1.jpg", "img/stand-lamp-2.jpg"],
       itemName: "落地灯",
       itemPrice: 75,
-      itemDesc: "二手"
+      itemDesc: "6成新",
+      sold: false
    },
    {
       itemId: 4024,
       itemImage: ["img/scooter-1.jpg", "img/scooter-2.jpg"],
       itemName: "电动车",
       itemPrice: 1000,
-      itemDesc: "二手, 有头盔，手套"
+      itemDesc: "4成新, 有头盔，手套",
+      sold: false
    },
    {
       itemId: 4025,
       itemImage: ["img/super-desk-1.jpg", "img/super-desk-2.jpg"],
       itemName: "站立式工作桌",
       itemPrice: 650,
-      itemDesc: "新的"
+      itemDesc: "全新",
+      sold: false
    },
    {
       itemId: 4026,
       itemImage: ["img/weights-1.jpg", "img/weights-2.jpg"],
       itemName: "锻炼哑铃",
       itemPrice: 60,
-      itemDesc: "二手"
+      itemDesc: "7成新",
+      sold: false
    },
    {
       itemId: 4027,
       itemImage: ["img/round-chair-1.jpg", "img/round-chair-2.jpg"],
       itemName: "椅子",
       itemPrice: 40,
-      itemDesc: "二手, 没有椅垫 "
+      itemDesc: "7成新, 没有椅垫",
+      sold: false
    },
    {
       itemId: 4028,
       itemImage: ["img/foam-1.jpg", "img/foam-2.jpg", "img/foam-3.jpg", "img/foam-4.jpg"],
       itemName: "海绵床垫",
       itemPrice: 60,
-      itemDesc: "二手, "
+      itemDesc: "4成新",
+      sold: false
    },
    {
       itemId: 4029,
       itemImage: ["img/couch-cover-1.jpg"],
       itemName: "沙发垫",
       itemPrice: 55,
-      itemDesc: "二手"
+      itemDesc: "5成新",
+      sold: false
    },
    {
       itemId: 4030,
       itemImage: ["img/oven-1.jpg"],
       itemName: "电烤箱",
       itemPrice: 50,
-      itemDesc: "二手"
+      itemDesc: "4成新",
+      sold: false
    },
    {
       itemId: 4031,
       itemImage: ["img/quilt-pink-1.jpg", "img/quilt-pink-2.jpg", "img/quilt-pink-3.jpg" ],
       itemName: "被子",
       itemPrice: 150,
-      itemDesc: "二手, 有粉红色的床具"
+      itemDesc: "7成新, 有粉红色的床具",
+      sold: false
    },
    {
       itemId: 4033,
       itemImage: ["img/room-cooler-1.jpg" ],
       itemName: "冷气机",
       itemPrice: 100,
-      itemDesc: "卖光了"
+      itemDesc: "4成新 - (卖光了)",
+      sold: true
    },
    {
       itemId: 4034,
       itemImage: ["img/curtains-beige-1.jpg" ],
       itemName: "窗帘",
       itemPrice: 200,
-      itemDesc: "二手, 适合客厅"
+      itemDesc: "6成新, 适合客厅",
+      sold: false
    },
    {
       itemId: 4035,
       itemImage: ["img/curtains-brown-1.jpg" ],
       itemName: "窗帘",
       itemPrice: 200,
-      itemDesc: "二手"
+      itemDesc: "6成新",
+      sold: false
    },
    {
       itemId: 4036,
       itemImage: ["img/carpet-red-1.jpg" ],
       itemName: "地毯, 红色的",
       itemPrice: 60,
-      itemDesc: "二手"
+      itemDesc: "4成新",
+      sold: false
    }
 ];
 
@@ -258,7 +294,7 @@ function showItems (itemsArray) {
 };
 
 
-
+// Show all sales items when the page loads
 showItems(saleItems);
 
 function removeArrows () {
@@ -279,6 +315,8 @@ function removeArrows () {
    }
 
 };
+
+//Removes right and left arrows in single images (arrays contain one image)
 removeArrows();
 
 const mainContainer = document.getElementById("sale-items");
@@ -331,7 +369,29 @@ function showPhone () {
   `
 
    mainContainer.insertAdjacentHTML('beforeend', output); 
-  
+}
+
+//Puts a label "sold" on sold items
+
+function soldLabel () {
+let mainContainer = document.querySelector('#sale-items');
+let postArray = mainContainer.children;
+
+let output = `<div class="itemSold">
+   <img src="img/sold-sign-trans.png" class="sold__img"></img>
+</div>`
+
+for(let i = 0; i < postArray.length; i++) {
+   let imgId = postArray[i].querySelector('.img__div').firstElementChild.id;
+   for(let j = 0; j < saleItems.length; j++) {
+      if(imgId == saleItems[j].itemId && saleItems[j].sold == true) {
+         
+         let soldItem = postArray[i].querySelector('.img__div');
+         console.log(soldItem)
+         soldItem.insertAdjacentHTML('beforeend', output);     
+      } 
+   } 
+ }
 }
 
 let clicked = false;
@@ -339,6 +399,7 @@ let clicked = false;
 phoneContact.addEventListener('click', function(e) {
   
     if(clicked == false && e.target.getAttribute('class') == 'fas fa-mobile-alt') {
+       //Shows contact information when the phone icon is clicked
       showPhone()  
       clicked = true; 
     } else if ( clicked == true && e.target.getAttribute('class') == 'fas fa-mobile-alt' ) {
@@ -359,5 +420,5 @@ phoneContact.addEventListener('click', function(e) {
 });
 
 
-
+soldLabel();
 
