@@ -5,9 +5,6 @@ $(document).ready(()=> {
 
 const imageContainer = document.querySelector("#sale-items");
 
-
-
-
 imageContainer.addEventListener('click', function(e) {
    if(e.target.getAttribute('class') == 'rightArrow') {
       const rightImg = e.target.parentNode.children[1].firstElementChild;
@@ -20,7 +17,6 @@ imageContainer.addEventListener('click', function(e) {
          }
       }
    }
-
 })
 
 imageContainer.addEventListener('click', function(e) {
@@ -33,11 +29,10 @@ imageContainer.addEventListener('click', function(e) {
             let imgIndex = saleItems[i].itemImage.indexOf(getImgSrc);
             saleItems[i].itemImage[imgIndex-1] ? rightImg.src = saleItems[i].itemImage[imgIndex-1] : rightImg.src = saleItems[i].itemImage[0];
          }
-      }
-   }
-
-})
+       }
+    }
   })
+ })
 
 const saleItems = [
     {
@@ -276,7 +271,7 @@ function showItems (itemsArray) {
         <div  class="post" id="imageBox">
           <h2>${each.itemName}</h2>
           <div class="img__div">
-              <img src="${each.itemImage[0]}" class="post__img" id="${each.itemId}">
+              <img src="${each.itemImage[0]}" class="post__img" id="${each.itemId}" alt="sale item ${each.itemName}">
               
            </div>
 
@@ -322,12 +317,6 @@ removeArrows();
 const mainContainer = document.getElementById("sale-items");
 const phoneContact = document.querySelector('.phoneBox');
 
-
-
-
-
-
-
 function showPhone () {
   let output = `
   <div class="modal-bg">
@@ -367,7 +356,6 @@ function showPhone () {
     
   </div>
   `
-
    mainContainer.insertAdjacentHTML('beforeend', output); 
 }
 
@@ -418,7 +406,6 @@ phoneContact.addEventListener('click', function(e) {
     } 
    
 });
-
 
 soldLabel();
 
