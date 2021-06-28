@@ -324,30 +324,28 @@ function showPhone () {
     <div class="modal">
     <span class="closeModal">&times;</span>
        <div class="phoneContainer">
-       <h3>Arthur (亚瑟)</h3>
-       <h5>寸金嘉苑详情咨询</h5>
-         <ul>
-           <li>电话 / 微信: 15218209747</li>
+       <h4>Arthur (亚瑟)</h4>
+       <h6>寸金嘉苑详情咨询</h6>
+         
+           <p>电话 / 微信: 15218209747</p>
            
-         </ul>
          <hr class="lineBreak">
        </div>
        
        <div class="phoneContainer">
-       <h3>李果</h3>
-       <h5>更多其他咨询</h5>
-       <ul>
-           <li>电话 / 微信: 13553493070</li>
+       <h4>李果</h4>
+       <h6>更多其他咨询</h6>
+           <p>电话 / 微信: 13553493070</p>
   
-         </ul>
+      
          <hr class="lineBreak">
        </div>
        
        <div class="phoneContainer">
-       <h3>温宇</h3>
-       <h5>更多其他咨询</h5>
-         <ul>
-           <li>电话 / 微信: 18820811069</li>
+       <h4>温宇</h4>
+       <h6>更多其他咨询</h6>
+         
+           <p>电话 / 微信: 18820811069</p>
            <hr class="lineBreak">
        </div>
        
